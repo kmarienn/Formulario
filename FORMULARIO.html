@@ -7,11 +7,12 @@
 
 
 	<body style="background-color:lightcyan;">
-		<h1 style="color:blue;font-family:Times New Roman;"> Datos Formulario </h1>
+		<h1 style="color:blue;font-family:Times New Roman;"> Datos Estudiante </h1>
 		<h4> Llenar el siguiente formulario con los datos solicitados </h4>
-		<br>
 
 		<form>
+		<fieldset>
+		<legend>Datos personales:</legend>
  		   <label for="name">Nombres:</label><br>
   		   <input type="text" id="name" name="name"><br>
 
@@ -25,36 +26,71 @@
 		   <label for="ced">Cédula:</label><br>
   		   <input type="text" id="ced" name="ced"><br>
 
- 		   <br>
-
-	         <label for="ced">Carrera:</label><br>
-  		   <input type="text" id="career" name="career"><br>
-
- 		   <br>
+			<br>
+			<label for="birthday">Fecha de nacimiento:</label>
+			<input type="date" id="birthday" name="birthday"><br>
 
 		   <p>Seleccione una opción:</p>
 		   <input type="radio" id="femenino" name="sexo" value="Femenino">
-  		   <label for="femenino">Femenino</label><br>
+  	   <label for="femenino">Femenino</label><br>
 
 		   <input type="radio" id="masculino" name="sexo" value="Masculino">
-  		   <label for="masculino">Masculino</label><br>
+  	   <label for="masculino">Masculino</label><br>
 
-		   <br>
+			<br>
 
-			<label for="Semestre"> Seleccione el semestre en el que se encuentra:</label>
-  			<select id="Semestre" name="Semestre">
-   			 <option value="uno">1</option>
-   			 <option value="dos">2</option>
-    			 <option value="tres">3</option>
-    			 <option value="cuatro">4</option>
-			 <option value="cinco">5</option>
-    			 <option value="seis">6</option>
-    			 <option value="siete">7</option>
-			 <option value="cinco">8</option>
-    			 <option value="seis">9</option>
-    			 <option value="siete">10</option>
-  			</select>
+			<label for="email">Correo personal:</label>
+  			<input type="email" id="email" name="email" size="40">
+
+		</fieldset>
 		</form>
 
+		<br>
+
+		<form>
+		<fieldset>
+		<legend>Universitarios :</legend>
+
+			<label for="career">Carrera:</label><br>
+  		    <input type="text" id="career" name="career" size="30"><br>
+
+ 		   <br>
+		   <label for="Semestre"> Seleccione el semestre en el que se encuentra:</label>
+  		   <select id="Semestre" name="Semestre">
+   		   <option value="uno">1</option>
+   		   <option value="dos">2</option>
+		   <option value="tres">3</option>
+		   <option value="cuatro">4</option>
+		   <option value="cinco">5</option>
+		   <option value="seis">6</option>
+    	   <option value="siete">7</option>
+		   <option value="ocho">8</option>
+    	   <option value="nueve">9</option>
+    	   <option value="ten">10</option>
+		   </select>
+
+			<br><br>
+		   <label for="Facultad"> Seleccione la facultad a la que pertenece:</label>
+  		   <select id="Facultad" name="Facultad" size="3">
+   		   <option value="fca">Ciencias Administrativas</option>
+   		   <option value="fce">Ciencias Económicas</option>
+		   <option value="au">Arquitectura y Urbanismo</option>
+		   <option value="m">Medicina</option>
+		   <option value="o">Odontologís</option>
+		   <option value="vz">Veterinaria y Zootecnia</option>
+    	   <option value="f">Filosofía</option>
+		   <option value="j">Jurisprudencia</option>
+    	   <option value="mate">Matemáticas</option>
+    	   <option value="cq">Ciencias Químicas</option>
+		   </select><br>
+
+			<br>
+
+			<label for="email">Correo institucional:</label>
+  			<input type="email" id="email" name="email" size="40">
+
+		</fieldset>
+		</form>
+		<img src="img_girl.jpg" alt="UNIVERSIDAD">
 	</body>
 </html>
